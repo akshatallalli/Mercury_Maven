@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="2" parallel="tests">
+
+  <test name="ChromeTest">
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="pom.mercury.tours.CrossBrowser_Ex"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ <test name="IE">
+  <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="pom.mercury.tours.CrossBrowser_Ex"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

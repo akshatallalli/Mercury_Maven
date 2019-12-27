@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="2" parallel="tests">
+  <test name="Test1">
+    <classes>
+      <class name="pom.mercury.tours.BatchExecution_Smoke"/>
+      <class name="pom.mercury.tours.DragAndDrop"/>
+      <class name="pom.mercury.tours.MouseHover_Ex"/>
+      <class name="pom.mercury.tours.NetBanking_Handl_WindwAlert"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

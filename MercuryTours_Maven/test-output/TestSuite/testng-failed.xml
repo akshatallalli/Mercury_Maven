@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="tests">
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="pom.mercury.tours.CrossBrowser_Ex">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="setup"/>
+          <include name="Sign_On" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- pom.mercury.tours.CrossBrowser_Ex -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="IE(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="pom.mercury.tours.CrossBrowser_Ex">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="setup"/>
+          <include name="Sign_On" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- pom.mercury.tours.CrossBrowser_Ex -->
+    </classes>
+  </test> <!-- IE(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
